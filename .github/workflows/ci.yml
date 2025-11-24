@@ -3,6 +3,8 @@ name: CI
 
 on:
   push:
+    tags-ignore:
+      - '**'  # CI runs as part of the release workflow anyway
   pull_request:
   workflow_dispatch:
 
